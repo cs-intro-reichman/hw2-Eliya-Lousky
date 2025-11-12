@@ -19,7 +19,6 @@ public  class  TestRandom {
 			}
 
 
-			
 			 System.out.println("> 0.5: " + greaterThan + " times");
 			 System.out.println("<= 0.5: " + lessThanOrEqual + " times");
 			 

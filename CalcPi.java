@@ -7,18 +7,17 @@ public class CalcPi {
 		double sum = 0.00 ;
 
 
-		for (int i = 0 ; i <= num; i++)
+		for (int i = 0 ; i < num; i++)
 		if (i%2 == 0 ) {
 			sum += 1.0 / (2*i +1);
 		} else {
 			sum -= 1.0 / (2*i +1);
 		}
 
-		double valumpi = sum*4;
+		    double approxPi = sum * 4;
 
-		System.out.println("pi according to Java: " +Math.PI);
-		System.out.println("pi, approximated: " + valumpi);
-
-
-	}
+        System.out.println("pi according to Java: " + Math.PI);
+        System.out.printf("pi, approximated:     %.16f%n", approxPi);
+    }
 }
+		

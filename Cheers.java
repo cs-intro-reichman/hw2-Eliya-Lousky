@@ -11,23 +11,24 @@ public class Cheers {
 	    // Replace this comment with your code
             String ch = (args[0]);
             int num =Integer.parseInt(args [1]);
-            String Special = "AEFHILMNOR";
+            String Special = "AEFHILMNORSX";
 
             String   cheers = ch.toUpperCase();
 
         
-            for (int i = 0 ; i <= cheers.length() ; i++){
+            for (int i = 0 ; i < cheers.length() ; i++){
                 char letter = cheers.charAt(i);
                 if (Special.indexOf(letter) != -1 ) {
-                System.out.println("Give mw an " + letter + ": " + letter + "!");
+                System.out.println("Give me an " + letter + ": " + letter + "!");
                 } else { 
-                System.out.println("Give mw a " + letter + ": " + letter + "!");
+                System.out.println("Give me a  " + letter + ": " + letter + "!");
                 }
                 }
+                
 
-                System.out.println(" What does that spell?");
+                System.out.println("What does that spell?");
 
-                for (int v = 0 ; v <= num ; v++ ){
+                for (int v = 0 ; v < num ; v++ ){
                   System.out.println(cheers + "!!!");
                 }
 

@@ -6,11 +6,12 @@ public class TimeCalc {
 
         String[] parts = hhmm.split(":");
 
-        int mm = Integer.parseInt(parts[0]);
-        int hh = Integer.parseInt(parts[1]);
+        int hh = Integer.parseInt(parts[0]);
+        int mm = Integer.parseInt(parts[1]);
 
+    
 
-        String minutes = ((hh * 60 ) + adding + mm );
+       String minutes = ((hh * 60 ) + adding + mm );
         int min = Integer.parseInt (minutes);
         int hours = (min / 60 );
         int newhours = (hh % 24);
