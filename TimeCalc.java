@@ -22,7 +22,9 @@ public class TimeCalc {
          hourstr = "" + newhours;
         }
 
-        System.out.println(hhmm + " " + adding);
+
+
+        
 
         System.out.println(hourstr + ":" + newminutes);
 
