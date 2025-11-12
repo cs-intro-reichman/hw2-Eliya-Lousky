@@ -9,16 +9,18 @@ Great work boaz!
 public class Cheers {
         public static void main(String[] args) {
 	    // Replace this comment with your code
-            String cheers = (args[0]);
+            String ch = (args[0]);
             int num =Integer.parseInt(args [1]);
             String Special = "AEFHILMNOR";
+
+            String   cheers = ch.toUpperCase();
 
         
             for (int i = 0 ; i <= cheers.length() ; i++){
                 char letter = cheers.charAt(i);
                 if (Special.indexOf(letter) != -1 ) {
                 System.out.println("Give mw an " + letter + ": " + letter + "!");
-                }  else { 
+                } else { 
                 System.out.println("Give mw a " + letter + ": " + letter + "!");
                 }
                 }
