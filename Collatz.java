@@ -7,7 +7,7 @@ public class Collatz {
 	    // Replace this comment with your code
 			
 		int N = Integer.parseInt(args[0]);
-	      String cv = (args[1]);
+	    String cv = (args[1]);
 
 		boolean verbose = cv.equalsIgnoreCase("v"); 
        
@@ -36,10 +36,10 @@ public class Collatz {
 				 if (verbose) {
                	 System.out.println(sequence + " (" + count + ")");
           			  }
-      
-				System.out.println("Every one of the first " + sequence + " hailstone sequences reached 1.");
+					}
+				System.out.println("Every one of the first " + N + " hailstone sequences reached 1.");
 	}
 	
 
 	}
-}
+
