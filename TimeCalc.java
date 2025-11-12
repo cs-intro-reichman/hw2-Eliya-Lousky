@@ -1,20 +1,18 @@
 public class TimeCalc {
     public static void main(String[] args) {
         // Replace this comment with your code
-        String hhmm = (args[0]);
+        String [] hhmm = args[0].split(":");
+      
+        int hh = Integer.parseInt(hhmm[0]);
+        int mm = Integer.parseInt(hhmm[1]);
+
         int adding =Integer.parseInt(args[1]);
 
-        String[] parts = hhmm.split(":");
-
-        int hh = Integer.parseInt(parts[0]);
-        int mm = Integer.parseInt(parts[1]);
-
-       
         int totalMinutes = ((hh * 60) + mm + adding)        ;
-        totalMinutes = totalMinutes % (24 * 60);
+        totalMinutes = ((totalMinutes % (24 * 60)) + (24 * 60)) % (24 * 60);;
     
-        int newhours = (totalMinutes / 60) % 24;
-        int newminutes = totalMinutes % 60;
+        int newhours = (totalMinutes / 60);
+        int newminutes = (totalMinutes % 60);
        
 
         String hourstr ;

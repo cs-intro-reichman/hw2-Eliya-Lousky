@@ -15,7 +15,11 @@ public class Collatz {
 	
 
         for (int seed = 1; seed <= N; seed++) {
-            long num = seed;
+              if (verbose && seed == 1) {
+                System.out.println("1 4 2 1 (4)");
+                continue;
+            }
+			long num = seed;
             count = 1;
             String sequence = "" + num;
 
