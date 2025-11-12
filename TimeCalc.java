@@ -22,11 +22,18 @@ public class TimeCalc {
          hourstr = "" + newhours;
         }
 
+          String minustr;
+         if (newminutes < 10) {
+         minustr = "0" + newminutes;
+        } else {
+         minustr = "" + newminutes;
+        }
+
 
 
         
 
-        System.out.println(hourstr + ":" + newminutes);
+        System.out.println(hourstr + ":" + minustr);
 
     }
 }
